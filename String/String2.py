@@ -176,19 +176,14 @@ print(count)
 '''
 # Count the names which contain A in them.
 
-names= ["Nobita", "Naruto", "Noddy", "Shinchan", "Oswald"];
+'''names= ["Nobita", "Naruto", "Noddy", "Shinchan", "Oswald"];
 count=0
-
 for i in range(0,len(names)):
-
-	 name = names[i]
+	name = names[i]
     for j in range(0,len(name)):
-	
 	    if(name[j]=='a' or name[j]=='A'):
-		
-			count+= 1;
-			break;
-
+		    count+= 1;
+		    break;
 print(count)
-
+'''
 

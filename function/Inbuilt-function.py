@@ -173,6 +173,16 @@ print(x)  # chunnumunnutunnu
 '''
 # slice()
 
-a = ["a", "b", "c", "d", "e", "f", "g", "h"]
+'''a = ["a", "b", "c", "d", "e", "f", "g", "h"]
 x = slice(2)
 print(a[x])  # ['a', 'b', 'c','d', 'e']
+'''
+
+#split()
+
+'''txt = "hello, my name is Peter, I am 26 years old"
+x = txt.split(", ")
+print(x)
+
+# ['hello', 'my name is Peter', 'I am 26 years old']'''
+

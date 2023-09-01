@@ -199,13 +199,14 @@ print(d.values())  # dict_values(['Sam', 'Production', 27])
 # items()
 # Return the list of tuples, where each tuple has a key-value pair of the dictionary.
 
-d = {
+'''d = {
     'name': 'Sam',
     'department': 'Production',
     'age': 27
 }
-print(d.items())
+print(d.items())'''
 '''
 OUTPUT =>
 dict_items([('name', 'Sam'), ('department', 'Production'), ('age', 27)])
 '''
+
