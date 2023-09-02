@@ -47,6 +47,36 @@ public class GlobalExceptionHandler {
 
 	}
 	
+	// Student Exception Handler
+	
+		@ExceptionHandler(StudentException.class)
+		public ResponseEntity<MyErrorDetails> studentExceptionHandler(StudentException e, WebRequest req) {
+
+			MyErrorDetails err = new MyErrorDetails();
+
+			err.setTimeStamp(LocalDateTime.now());
+			err.setMessage(e.getMessage());
+			err.setDetails(req.getDescription(false));
+
+			return new ResponseEntity<>(err, HttpStatus.BAD_REQUEST);
+
+		}
+		
+		// Course Exception Handler
+		
+		@ExceptionHandler(CourseException.class)
+		public ResponseEntity<MyErrorDetails> courseExceptionHandler(CourseException e, WebRequest req) {
+
+			MyErrorDetails err = new MyErrorDetails();
+
+			err.setTimeStamp(LocalDateTime.now());
+			err.setMessage(e.getMessage());
+			err.setDetails(req.getDescription(false));
+
+			return new ResponseEntity<>(err, HttpStatus.BAD_REQUEST);
+
+		}
+	
 	
 	
 
