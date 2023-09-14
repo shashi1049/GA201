@@ -9,8 +9,12 @@ public class PrimeNumber {
 	private static void findPrime(int[] arr) {
 		// TODO Auto-generated method stub
 		int n = arr.length;
+		
+		//running through array elements.
 		for(int i=0;i<n;i++) {
 			int count =0;
+			
+			//Running loop for every elements.
 			for(int j=2;j<arr[i];j++) {
 				if(arr[i]%j==0) {
 					count++;
