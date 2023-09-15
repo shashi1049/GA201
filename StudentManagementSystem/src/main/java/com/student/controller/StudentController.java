@@ -1,5 +1,7 @@
 package com.student.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,8 +16,6 @@ import com.student.exception.StudentException;
 import com.student.exception.UserException;
 import com.student.model.Student;
 import com.student.service.StudentService;
-
-import jakarta.validation.Valid;
 
 @RestController
 public class StudentController {

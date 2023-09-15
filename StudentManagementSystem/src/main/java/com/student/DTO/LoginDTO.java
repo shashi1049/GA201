@@ -1,8 +1,9 @@
 package com.student.DTO;
 
+import javax.validation.constraints.NotNull;
+
 import com.student.model.UserType;
 
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,7 +19,6 @@ public class LoginDTO {
 	@NotNull(message ="Password cannot be null.")
 	private String password;
 	
-	@NotNull(message ="User cannot be null.")
 	private UserType userType;
 	
 	
