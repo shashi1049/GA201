@@ -8,7 +8,9 @@ public class Copains {
 
 	private static void printElement(int[] arr) {
 		// TODO Auto-generated method stub
+		//length of array
 		int n = arr.length;
+		//iterating through array
 		for(int i=0;i<n;i++) {
 			System.out.println(arr[i]);
 		}
