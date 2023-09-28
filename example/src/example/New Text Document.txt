@@ -1,0 +1,1 @@
+Command-line arguments, often referred to as command-line parameters or arguments, are values or options provided to a command-line program when it is executed. These arguments allow you to pass information to a program so that it can perform specific tasks or configurations based on the provided input. Here's an explanation of command-line arguments:
