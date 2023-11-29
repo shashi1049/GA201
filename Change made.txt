@@ -1,0 +1,26 @@
+Change made
+========================
+62 app
+63 app
+65 app
+66 app
+67 DIM_DATE not present in any DB.
+68 app
+69 acitve_unique_foreign_imei not present in DB.
+70 device_duplicate_db not present
+71 check_imei_request not present.
+72 app
+73 app
+74 APP_TYPE_APPROVED Does not exist.
+75 check_imei_request_detail Does not exist.
+76 app
+77 APP_MCCMNC not present.
+78 APP_MANUFACTURED_LOCALTAC not present.
+79 app.
+80 app.
+82 app.
+83 operator _series not present.
+122 web_transaction_detail not present.
+161 web_transaction_detail not present.
+184 web_transaction_detail not present
+225 web_transaction_detail not present.

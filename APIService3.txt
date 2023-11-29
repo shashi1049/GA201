@@ -1,0 +1,1508 @@
+http://159.223.159.153:9504/eirs/services/checkIMEI
+----------------------------------------------------------
+
+2023-11-16 12:16:32.060 [http-nio-9504-exec-4] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        checkimeir0_.id as id1_12_,
+        checkimeir0_.active as active2_12_,
+        checkimeir0_.created_on as created_on3_12_,
+        checkimeir0_.description as description4_12_,
+        checkimeir0_.feature_name as feature_name5_12_,
+        checkimeir0_.modified_on as modified_on6_12_,
+        checkimeir0_.remark as remark7_12_,
+        checkimeir0_.tag as tag8_12_,
+        checkimeir0_.type as type9_12_,
+        checkimeir0_.value as value10_12_
+    from
+        check_imei_response_param checkimeir0_
+    where
+        checkimeir0_.tag=?
+        and checkimeir0_.type=?
+        and checkimeir0_.feature_name=?
+2023-11-16 12:16:32.061 [http-nio-9504-exec-4] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [CheckImeiErrorMessage]
+2023-11-16 12:16:32.061 [http-nio-9504-exec-4] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [INTEGER] - [1]
+2023-11-16 12:16:32.062 [http-nio-9504-exec-4] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [CheckImei]
+2023-11-16 12:16:32.502 [http-nio-9504-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException :414 - Failure in @ExceptionHandler com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler#handleBadRequestException(Exception, WebRequest)
+java.lang.NullPointerException: null
+        at com.gl.ceir.config.service.impl.CheckImeiServiceImpl.globalErrorMsgs(CheckImeiServiceImpl.java:223) ~[classes!/:2.2.2.RELEASE]
+        at com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleBadRequestException(GlobalControllerExceptionHandler.java:97) ~[classes!/:2.2.2.RELEASE]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+
+
+
+
+http://159.223.159.153:9504/eirs/fileCopier
+------------------------------------------------
+
+2023-11-16 12:29:05.760 [http-nio-9504-exec-6] WARN  org.springframework.web.servlet.DispatcherServlet.noHandlerFound :1251 - No mapping for POST /eirs/fileCopier
+2023-11-16 12:29:05.763 [http-nio-9504-exec-6] ERROR com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleNoHandlerFound :49 - Error msg :No handler found for POST /eirs/fileCopier # request ServletWebRequest: uri=/eirs/fileCopier;client=117.233.210.77
+2023-11-16 12:29:05.764 [http-nio-9504-exec-6] ERROR com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleNoHandlerFound :51 - Error ############ : {
+     "serverId": "2",
+    "filePath": "/u01/eirsapp/apache-tomcat-9.0.34/webapps/docs/eirs/uploaded-files/35632017/MDR/",
+    "fileName": "Mobileum.png"
+
+}
+2023-11-16 12:29:05.766 [http-nio-9504-exec-6] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        checkimeir0_.id as id1_12_,
+        checkimeir0_.active as active2_12_,
+        checkimeir0_.created_on as created_on3_12_,
+        checkimeir0_.description as description4_12_,
+        checkimeir0_.feature_name as feature_name5_12_,
+        checkimeir0_.modified_on as modified_on6_12_,
+        checkimeir0_.remark as remark7_12_,
+        checkimeir0_.tag as tag8_12_,
+        checkimeir0_.type as type9_12_,
+        checkimeir0_.value as value10_12_
+    from
+        check_imei_response_param checkimeir0_
+    where
+        checkimeir0_.tag=?
+        and checkimeir0_.type=?
+        and checkimeir0_.feature_name=?
+2023-11-16 12:29:05.986 [http-nio-9504-exec-6] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [CheckImeiErrorMessage]
+2023-11-16 12:29:05.987 [http-nio-9504-exec-6] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [INTEGER] - [1]
+2023-11-16 12:29:05.988 [http-nio-9504-exec-6] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [CheckImei]
+2023-11-16 12:29:06.422 [http-nio-9504-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException :414 - Failure in @ExceptionHandler com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler#handleNoHandlerFound(NoHandlerFoundException, WebRequest)
+java.lang.NullPointerException: null
+        at com.gl.ceir.config.service.impl.CheckImeiServiceImpl.globalErrorMsgs(CheckImeiServiceImpl.java:223) ~[classes!/:2.2.2.RELEASE]
+        at com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleNoHandlerFound(GlobalControllerExceptionHandler.java:56) ~[classes!/:2.2.2.RELEASE]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-11-16 12:29:06.424 [http-nio-9504-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.handleNoHandlerFoundException :513 - No handler found for POST /eirs/fileCopier
+2023-11-16 12:29:06.425 [http-nio-9504-exec-6] WARN  org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException :199 - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /eirs/fileCopier]
+
+
+http://159.223.159.153:9504/eirs/services/mobile_api/mobileDeviceDetails/save
+--------------------------------------------------------------------------------
+=> Internal server error in postman
+
+{
+    "statusCode": 500,
+    "statusMessage": " server error",
+    "language": "com.gl.ceir.config.service.impl.CheckImeiServiceImpl",
+    "result": {
+        "message": "internal server error"
+    }
+}
+
+=> But in logs
+
+2023-11-16 12:34:46.612 [http-nio-9504-exec-10] INFO  com.gl.ceir.config.controller.CheckImeiController.errorValidationChecker :142 - AppDeviceDetailsDb{id=null, languageType=kh, deviceId=64DFC084-8571-470C-A1E4-CD1A42AF86ED, osType=ios, deviceDetails={"nodename":"iPhone-10","systemName":"iOS","release":"22.5.0","machine":"iPhone14,5","sysname":"Darwin","name":"iPhone","model":"iPhone"}}
+2023-11-16 12:34:46.613 [http-nio-9504-exec-10] INFO  com.gl.ceir.config.controller.CheckImeiController.getMobileDeviceDetails :135 - Request = AppDeviceDetailsDb{id=null, languageType=kh, deviceId=64DFC084-8571-470C-A1E4-CD1A42AF86ED, osType=ios, deviceDetails={"nodename":"iPhone-10","systemName":"iOS","release":"22.5.0","machine":"iPhone14,5","sysname":"Darwin","name":"iPhone","model":"iPhone"}}
+2023-11-16 12:34:46.866 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    insert
+    into
+        mobile_app_dev_info
+        (os_type,device_id,device_details,language_type)
+    VALUES
+        (?,?  ,? , ?)
+2023-11-16 12:34:46.866 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [ios]
+2023-11-16 12:34:46.867 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [VARCHAR] - [64DFC084-8571-470C-A1E4-CD1A42AF86ED]
+2023-11-16 12:34:46.867 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [{"nodename":"iPhone-10","systemName":"iOS","release":"22.5.0","machine":"iPhone14,5","sysname":"Darwin","name":"iPhone","model":"iPhone"}]
+2023-11-16 12:34:46.867 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [4] as [VARCHAR] - [kh]
+2023-11-16 12:34:47.410 [http-nio-9504-exec-10] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions :137 - SQL Error: 4098, SQLState: 42000
+2023-11-16 12:34:47.410 [http-nio-9504-exec-10] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions :142 - ORA-04098: trigger 'APP.MOBILE_APP_DEV_INFO_SEQ_TR' is invalid and failed re-validation
+
+2023-11-16 12:34:47.635 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        alertdb0_.id as id1_9_,
+        alertdb0_.alert_id as alert_id2_9_,
+        alertdb0_.created_on as created_on3_9_,
+        alertdb0_.description as description4_9_,
+        alertdb0_.feature as feature5_9_,
+        alertdb0_.modified_on as modified_on6_9_
+    from
+        cfg_feature_alert alertdb0_
+    where
+        alertdb0_.alert_id=?
+2023-11-16 12:34:47.635 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [alert1104]
+2023-11-16 12:34:47.865 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    insert
+    into
+        sys_generated_alert
+        (id, alert_id, created_on, description, modified_on, status, user_id)
+    values
+        (default, ?, ?, ?, ?, ?, ?)
+2023-11-16 12:34:48.084 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [alert1104]
+2023-11-16 12:34:48.086 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [TIMESTAMP] - [2023-11-16T12:34:47.865087]
+2023-11-16 12:34:48.088 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [Something went wrong while saving deviceDetails for  feature CheckImei Init]
+2023-11-16 12:34:48.088 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [4] as [TIMESTAMP] - [2023-11-16T12:34:47.865123]
+2023-11-16 12:34:48.089 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [5] as [INTEGER] - [0]
+2023-11-16 12:34:48.089 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [6] as [INTEGER] - [0]
+
+
+http://159.223.159.153:9504/eirs/gsma/brandName
+----------------------------------------------------
+
+=> Internal server error in postman
+
+{
+    "timestamp": "2023-11-16T07:15:56.105+0000",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet",
+    "path": "/eirs/gsma/brandName"
+}
+
+
+=>logs
+
+2023-11-16 12:45:55.015 [http-nio-9504-exec-2] INFO  com.gl.ceir.config.service.impl.BrandServiceImpl.getAllBrands :29 - Going for top 5 brands
+2023-11-16 12:45:55.025 [http-nio-9504-exec-2] INFO  com.gl.ceir.config.service.impl.BrandServiceImpl.getAllBrands :34 - Size 5 ,ListvivoNokiaOPPOAppleSamsung
+2023-11-16 12:45:55.034 [http-nio-9504-exec-2] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        id ,
+        brand_name
+    from
+        dev_brand_name
+    order by
+        brand_name=? desc,
+        brand_name=? desc,
+        brand_name =? desc,
+        brand_name =? desc,
+        brand_name =? desc,
+        brand_name asc
+2023-11-16 12:45:55.247 [http-nio-9504-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [vivo]
+2023-11-16 12:45:55.248 [http-nio-9504-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [VARCHAR] - [Nokia]
+2023-11-16 12:45:55.248 [http-nio-9504-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [OPPO]
+2023-11-16 12:45:55.248 [http-nio-9504-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [4] as [VARCHAR] - [Apple]
+2023-11-16 12:45:55.249 [http-nio-9504-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [5] as [VARCHAR] - [Samsung]
+2023-11-16 12:45:55.671 [http-nio-9504-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions :137 - SQL Error: 933, SQLState: 42000
+2023-11-16 12:45:55.671 [http-nio-9504-exec-2] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions :142 - ORA-00933: SQL command not properly ended
+
+2023-11-16 12:45:55.673 [http-nio-9504-exec-2] ERROR com.gl.ceir.config.service.impl.BrandServiceImpl.getAllBrands :43 - could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+        at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281) ~[spring-orm-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255) ~[spring-orm-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528) ~[spring-orm-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:149) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at com.sun.proxy.$Proxy150.getBrandNameWithTop5New(Unknown Source) ~[?:?]
+        at com.gl.ceir.config.service.impl.BrandServiceImpl.getAllBrands(BrandServiceImpl.java:36) [classes!/:2.2.2.RELEASE]
+        at com.gl.ceir.config.controller.BrandController.getAllBrands(BrandController.java:26) [classes!/:2.2.2.RELEASE]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+        at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:67) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.getResultSet(Loader.java:2292) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2050) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2012) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doQuery(Loader.java:953) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:354) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doList(Loader.java:2815) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doList(Loader.java:2797) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2629) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.list(Loader.java:2624) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2123) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1134) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:173) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1526) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:409) ~[spring-orm-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at com.sun.proxy.$Proxy266.getResultList(Unknown Source) ~[?:?]
+        at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:126) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:154) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:142) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:618) ~[spring-data-commons-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605) ~[spring-data-commons-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        ... 90 more
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+        at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:509) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:461) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1104) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:550) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:268) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:655) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:270) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:91) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:807) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:983) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1168) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3666) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1426) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3713) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1167) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-3.4.1.jar!/:?]
+        at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.1.jar!/:?]
+        at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.getResultSet(Loader.java:2292) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2050) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2012) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doQuery(Loader.java:953) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:354) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doList(Loader.java:2815) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doList(Loader.java:2797) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2629) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.list(Loader.java:2624) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2123) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1134) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:173) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1526) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:409) ~[spring-orm-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at com.sun.proxy.$Proxy266.getResultList(Unknown Source) ~[?:?]
+        at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:126) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:154) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:142) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:618) ~[spring-data-commons-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605) ~[spring-data-commons-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        ... 90 more
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00933: SQL command not properly ended
+
+        at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:513) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:461) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1104) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:550) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:268) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:655) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:270) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:91) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:807) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:983) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1168) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3666) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1426) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3713) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1167) ~[ojdbc8-19.3.0.0.jar!/:19.3.0.0.0]
+        at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-3.4.1.jar!/:?]
+        at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.1.jar!/:?]
+        at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.getResultSet(Loader.java:2292) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2050) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2012) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doQuery(Loader.java:953) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:354) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doList(Loader.java:2815) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.doList(Loader.java:2797) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2629) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.Loader.list(Loader.java:2624) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2123) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1134) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:173) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1526) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.4.9.Final.jar!/:5.4.9.Final]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:409) ~[spring-orm-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at com.sun.proxy.$Proxy266.getResultList(Unknown Source) ~[?:?]
+        at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:126) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:154) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:142) ~[spring-data-jpa-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:618) ~[spring-data-commons-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605) ~[spring-data-commons-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.2.3.RELEASE.jar!/:2.2.3.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        ... 90 more
+2023-11-16 12:45:55.677 [http-nio-9504-exec-2] ERROR com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleBadRequestException :90 - Error msg :could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet # request ServletWebRequest: uri=/eirs/gsma/brandName;client=117.233.210.77
+2023-11-16 12:45:55.678 [http-nio-9504-exec-2] ERROR com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleBadRequestException :92 - Error ############ :
+2023-11-16 12:45:55.679 [http-nio-9504-exec-2] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        checkimeir0_.id as id1_12_,
+        checkimeir0_.active as active2_12_,
+        checkimeir0_.created_on as created_on3_12_,
+        checkimeir0_.description as description4_12_,
+        checkimeir0_.feature_name as feature_name5_12_,
+        checkimeir0_.modified_on as modified_on6_12_,
+        checkimeir0_.remark as remark7_12_,
+        checkimeir0_.tag as tag8_12_,
+        checkimeir0_.type as type9_12_,
+        checkimeir0_.value as value10_12_
+    from
+        check_imei_response_param checkimeir0_
+    where
+        checkimeir0_.tag=?
+        and checkimeir0_.type=?
+        and checkimeir0_.feature_name=?
+2023-11-16 12:45:55.680 [http-nio-9504-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [CheckImeiErrorMessage]
+2023-11-16 12:45:55.680 [http-nio-9504-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [INTEGER] - [1]
+2023-11-16 12:45:55.680 [http-nio-9504-exec-2] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [CheckImei]
+2023-11-16 12:45:56.102 [http-nio-9504-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException :414 - Failure in @ExceptionHandler com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler#handleBadRequestException(Exception, WebRequest)
+java.lang.NullPointerException: null
+        at com.gl.ceir.config.service.impl.CheckImeiServiceImpl.globalErrorMsgs(CheckImeiServiceImpl.java:223) ~[classes!/:2.2.2.RELEASE]
+        at com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleBadRequestException(GlobalControllerExceptionHandler.java:97) ~[classes!/:2.2.2.RELEASE]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.lang.Thread.run(Thread.java:829) [?:?]
+
+
+
+
+http://159.223.159.153:9504/eirs/gsma/brandName
+----------------------------------------------------
+
+=> postman
+
+{
+    "timestamp": "2023-11-16T07:23:06.631+0000",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet",
+    "path": "/eirs/gsma/brandName"
+}
+
+=> Logs
+
+2023-11-16 12:53:05.559 [http-nio-9504-exec-3] INFO  com.gl.ceir.config.service.impl.BrandServiceImpl.getAllBrands :29 - Going for top 5 brands
+2023-11-16 12:53:05.560 [http-nio-9504-exec-3] INFO  com.gl.ceir.config.service.impl.BrandServiceImpl.getAllBrands :34 - Size 5 ,ListvivoNokiaOPPOAppleSamsung
+2023-11-16 12:53:05.561 [http-nio-9504-exec-3] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        id ,
+        brand_name
+    from
+        dev_brand_name
+    order by
+        brand_name=? desc,
+        brand_name=? desc,
+        brand_name =? desc,
+        brand_name =? desc,
+        brand_name =? desc,
+        brand_name asc
+2023-11-16 12:53:05.774 [http-nio-9504-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [vivo]
+2023-11-16 12:53:05.774 [http-nio-9504-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [VARCHAR] - [Nokia]
+2023-11-16 12:53:05.775 [http-nio-9504-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [OPPO]
+2023-11-16 12:53:05.775 [http-nio-9504-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [4] as [VARCHAR] - [Apple]
+2023-11-16 12:53:05.775 [http-nio-9504-exec-3] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [5] as [VARCHAR] - [Samsung]
+2023-11-16 12:53:06.197 [http-nio-9504-exec-3] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions :137 - SQL Error: 933, SQLState: 42000
+2023-11-16 12:53:06.197 [http-nio-9504-exec-3] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions :142 - ORA-00933: SQL command not properly ended
+
+2023-11-16 12:53:06.198 [http-nio-9504-exec-3] ERROR com.gl.ceir.config.service.impl.BrandServiceImpl.getAllBrands :43 - could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+
+
+
+
+
+http://localhost:9504/eirs/alert
+----------------------------------
+=> postman.
+
+{
+    "timestamp": "2023-11-16T07:28:51.746+0000",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "message": "Request method 'GET' not supported",
+    "path": "/eirs/alert"
+}
+
+
+=>logs
+2023-11-16 12:58:51.744 [http-nio-9504-exec-8] WARN  org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException :199 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+
+
+
+
+
+http://159.223.159.153:9504/eirs/services/checkIMEI
+-----------------------------------------------------
+
+=>postman
+
+{
+    "timestamp": "2023-11-16T07:33:44.161+0000",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "No message available",
+    "path": "/eirs/services/checkIMEI"
+}
+
+=>logs
+
+
+2023-11-16 13:07:56.273 [http-nio-9504-exec-10] INFO  com.gl.ceir.config.controller.CheckImeiController.checkImeiDevice :174 - CheckImeiRequest{id=null, createdOn=null, imei=861689046323214, msisdn=null, operator=null, imsi=null, language=en, channel=web, requestProcessStatus=null, imeiProcessStatus=null, checkProcessTime=null, complianceStatus=null, complianceValue=0, utm_source=null, browser=null, public_ip=null, header_browser=PostmanRuntime/7.33.0, header_public_ip=117.233.210.77, symbol_color=null, device_id=null, os_type=null, fail_process_description=null}
+2023-11-16 13:07:56.274 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        systemconf0_.id as id1_70_,
+        systemconf0_.active as active2_70_,
+        systemconf0_.created_on as created_on3_70_,
+        systemconf0_.description as description4_70_,
+        systemconf0_.feature_name as feature_name5_70_,
+        systemconf0_.modified_on as modified_on6_70_,
+        systemconf0_.remark as remark7_70_,
+        systemconf0_.tag as tag8_70_,
+        systemconf0_.type as type9_70_,
+        systemconf0_.value as value10_70_
+    from
+        sys_param systemconf0_
+    where
+        systemconf0_.tag=?
+2023-11-16 13:07:56.488 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [service_down_flag]
+2023-11-16 13:07:56.911 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        nationalwh0_.imei as imei1_45_,
+        nationalwh0_.actual_imei as actual_imei2_45_,
+        nationalwh0_.created_on as created_on3_45_,
+        nationalwh0_.list_type as list_type4_45_,
+        nationalwh0_.mobile_operator as mobile_operator5_45_,
+        nationalwh0_.msisdn as msisdn6_45_,
+        nationalwh0_.national_white_list_created_date as national_white_lis7_45_,
+        nationalwh0_.type_of_entry as type_of_entry8_45_
+    from
+        national_whitelist nationalwh0_
+    where
+        nationalwh0_.imei=?
+2023-11-16 13:07:56.912 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [86168904632321]
+2023-11-16 13:07:57.125 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        nationalwh0_.imei as imei1_45_,
+        nationalwh0_.actual_imei as actual_imei2_45_,
+        nationalwh0_.created_on as created_on3_45_,
+        nationalwh0_.list_type as list_type4_45_,
+        nationalwh0_.mobile_operator as mobile_operator5_45_,
+        nationalwh0_.msisdn as msisdn6_45_,
+        nationalwh0_.national_white_list_created_date as national_white_lis7_45_,
+        nationalwh0_.type_of_entry as type_of_entry8_45_
+    from
+        national_whitelist nationalwh0_
+    where
+        nationalwh0_.imei=?
+2023-11-16 13:07:57.125 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [86168904632321]
+2023-11-16 13:07:57.337 [http-nio-9504-exec-10] INFO  com.gl.ceir.config.service.impl.CheckImeiServiceImpl.getImeiDetailsDevices :117 - Is imei present in natinoal whitelist  :false
+2023-11-16 13:07:57.338 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        gsmatacdet0_.id as id1_41_,
+        gsmatacdet0_.brand_name as brand_name2_41_,
+        gsmatacdet0_.device_id as device_id3_41_,
+        gsmatacdet0_.device_type as device_type4_41_,
+        gsmatacdet0_.manufacturer as manufacturer5_41_,
+        gsmatacdet0_.marketing_name as marketing_name6_41_,
+        gsmatacdet0_.model_name as model_name7_41_
+    from
+        mobile_device_repository gsmatacdet0_
+    where
+        gsmatacdet0_.device_id=?
+2023-11-16 13:07:57.339 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [86168904]
+2023-11-16 13:07:57.550 [http-nio-9504-exec-10] INFO  com.gl.ceir.config.service.impl.CheckImeiServiceImpl.getImeiDetailsDevices :149 - Status is  :->NonWhiteListedNoDevice, For Channel -web, For Language -en  isValidImei:-> false
+2023-11-16 13:07:57.552 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        checkimeir0_.id as id1_12_,
+        checkimeir0_.active as active2_12_,
+        checkimeir0_.created_on as created_on3_12_,
+        checkimeir0_.description as description4_12_,
+        checkimeir0_.feature_name as feature_name5_12_,
+        checkimeir0_.modified_on as modified_on6_12_,
+        checkimeir0_.remark as remark7_12_,
+        checkimeir0_.tag as tag8_12_,
+        checkimeir0_.type as type9_12_,
+        checkimeir0_.value as value10_12_
+    from
+        check_imei_response_param checkimeir0_
+    where
+        checkimeir0_.tag=?
+        and checkimeir0_.type=?
+        and checkimeir0_.feature_name=?
+2023-11-16 13:07:57.552 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [NonWhiteListedNoDevice]
+2023-11-16 13:07:57.553 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [INTEGER] - [1]
+2023-11-16 13:07:57.553 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [CheckImei]
+2023-11-16 13:07:57.975 [http-nio-9504-exec-10] ERROR com.gl.ceir.config.service.impl.CheckImeiServiceImpl.getImeiDetailsDevices :185 - Failed at null ----- java.lang.NullPointerException ::::: null $$$$$$$$$$$ java.lang.NullPointerException
+2023-11-16 13:07:57.975 [http-nio-9504-exec-10] WARN  com.gl.ceir.config.service.impl.CheckImeiServiceImpl.saveCheckImeiFailDetails :203 - ------------------------------------------------------- Exception Due to Null pointer
+2023-11-16 13:07:57.976 [http-nio-9504-exec-10] INFO  com.gl.ceir.config.service.impl.CheckImeiServiceImpl.saveCheckImeiFailDetails :206 -  CHECK_IMEI :  Start Time = 1700120276272; End Time  = 1700120277975  !!! Request = CheckImeiRequest{id=null, createdOn=null, imei=861689046323214, msisdn=null, operator=null, imsi=null, language=en, channel=web, requestProcessStatus=Fail, imeiProcessStatus=null, checkProcessTime=null, complianceStatus=null, complianceValue=0, utm_source=null, browser=null, public_ip=null, header_browser=PostmanRuntime/7.33.0, header_public_ip=117.233.210.77, symbol_color=null, device_id=null, os_type=null, fail_process_description=Exception Due to Null pointer} ########## Response =Exception Due to Null pointer
+2023-11-16 13:07:57.977 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    insert
+    into
+        check_imei_req_detail
+        (channel, check_process_time, compliance_value, fail_process_description, header_browser, header_public_ip, imei, language, request_process_status, id)
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+2023-11-16 13:07:58.188 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [web]
+2023-11-16 13:07:58.189 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [VARCHAR] - [1704]
+2023-11-16 13:07:58.189 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [INTEGER] - [0]
+2023-11-16 13:07:58.189 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [4] as [VARCHAR] - [Exception Due to Null pointer]
+2023-11-16 13:07:58.189 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [5] as [VARCHAR] - [PostmanRuntime/7.33.0]
+2023-11-16 13:07:58.190 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [6] as [VARCHAR] - [117.233.210.77]
+2023-11-16 13:07:58.190 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [7] as [VARCHAR] - [861689046323214]
+2023-11-16 13:07:58.190 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [8] as [VARCHAR] - [en]
+2023-11-16 13:07:58.190 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [9] as [VARCHAR] - [Fail]
+2023-11-16 13:07:58.616 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        alertdb0_.id as id1_9_,
+        alertdb0_.alert_id as alert_id2_9_,
+        alertdb0_.created_on as created_on3_9_,
+        alertdb0_.description as description4_9_,
+        alertdb0_.feature as feature5_9_,
+        alertdb0_.modified_on as modified_on6_9_
+    from
+        cfg_feature_alert alertdb0_
+    where
+        alertdb0_.alert_id=?
+2023-11-16 13:07:58.617 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [alert1103]
+2023-11-16 13:07:58.830 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    insert
+    into
+        sys_generated_alert
+        (id, alert_id, created_on, description, modified_on, status, user_id)
+    values
+        (default, ?, ?, ?, ?, ?, ?)
+2023-11-16 13:07:59.041 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [alert1103]
+2023-11-16 13:07:59.042 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [TIMESTAMP] - [2023-11-16T13:07:58.830132]
+2023-11-16 13:07:59.042 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [Something went wrong in feature Check Imei while retrieving imei details]
+2023-11-16 13:07:59.042 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [4] as [TIMESTAMP] - [2023-11-16T13:07:58.830145]
+2023-11-16 13:07:59.042 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [5] as [INTEGER] - [0]
+2023-11-16 13:07:59.042 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [6] as [INTEGER] - [0]
+2023-11-16 13:07:59.466 [http-nio-9504-exec-10] ERROR com.gl.ceir.config.service.impl.CheckImeiServiceImpl.getImeiDetailsDevices :195 - Failed at null
+2023-11-16 13:07:59.468 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        checkimeir0_.id as id1_10_0_,
+        checkimeir0_.browser as browser2_10_0_,
+        checkimeir0_.channel as channel3_10_0_,
+        checkimeir0_.check_process_time as check_process_time4_10_0_,
+        checkimeir0_.compliance_status as compliance_status5_10_0_,
+        checkimeir0_.compliance_value as compliance_value6_10_0_,
+        checkimeir0_.device_id as device_id7_10_0_,
+        checkimeir0_.fail_process_description as fail_process_descr8_10_0_,
+        checkimeir0_.header_browser as header_browser9_10_0_,
+        checkimeir0_.header_public_ip as header_public_ip10_10_0_,
+        checkimeir0_.imei as imei11_10_0_,
+        checkimeir0_.imei_process_status as imei_process_stat12_10_0_,
+        checkimeir0_.imsi as imsi13_10_0_,
+        checkimeir0_.language as language14_10_0_,
+        checkimeir0_.msisdn as msisdn15_10_0_,
+        checkimeir0_.operator as operator16_10_0_,
+        checkimeir0_.os_type as os_type17_10_0_,
+        checkimeir0_.public_ip as public_ip18_10_0_,
+        checkimeir0_.request_process_status as request_process_s19_10_0_,
+        checkimeir0_.symbol_color as symbol_color20_10_0_,
+        checkimeir0_.utm_source as utm_source21_10_0_
+    from
+        check_imei_req_detail checkimeir0_
+    where
+        checkimeir0_.id=?
+2023-11-16 13:07:59.468 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [BIGINT] - [2]
+2023-11-16 13:07:59.681 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    update
+        check_imei_req_detail
+    set
+        browser=?,
+        channel=?,
+        check_process_time=?,
+        compliance_status=?,
+        compliance_value=?,
+        device_id=?,
+        fail_process_description=?,
+        header_browser=?,
+        header_public_ip=?,
+        imei=?,
+        imei_process_status=?,
+        imsi=?,
+        language=?,
+        msisdn=?,
+        operator=?,
+        os_type=?,
+        public_ip=?,
+        request_process_status=?,
+        symbol_color=?,
+        utm_source=?
+    where
+        id=?
+2023-11-16 13:07:59.682 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [1] as [VARCHAR] - [null]
+2023-11-16 13:07:59.682 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [VARCHAR] - [web]
+2023-11-16 13:07:59.682 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [3195]
+2023-11-16 13:07:59.683 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [4] as [VARCHAR] - [null]
+2023-11-16 13:07:59.683 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [5] as [INTEGER] - [0]
+2023-11-16 13:07:59.683 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [6] as [VARCHAR] - [null]
+2023-11-16 13:07:59.683 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [7] as [VARCHAR] - [Exception Due to Null pointer]
+2023-11-16 13:07:59.683 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [8] as [VARCHAR] - [PostmanRuntime/7.33.0]
+2023-11-16 13:07:59.683 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [9] as [VARCHAR] - [117.233.210.77]
+2023-11-16 13:07:59.684 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [10] as [VARCHAR] - [861689046323214]
+2023-11-16 13:07:59.684 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [11] as [VARCHAR] - [null]
+2023-11-16 13:07:59.684 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [12] as [VARCHAR] - [null]
+2023-11-16 13:07:59.684 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [13] as [VARCHAR] - [en]
+2023-11-16 13:07:59.684 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [14] as [VARCHAR] - [null]
+2023-11-16 13:07:59.684 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [15] as [VARCHAR] - [null]
+2023-11-16 13:07:59.684 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [16] as [VARCHAR] - [null]
+2023-11-16 13:07:59.685 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [17] as [VARCHAR] - [null]
+2023-11-16 13:07:59.685 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [18] as [VARCHAR] - [Fail]
+2023-11-16 13:07:59.685 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [19] as [VARCHAR] - [null]
+2023-11-16 13:07:59.685 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :52 - binding parameter [20] as [VARCHAR] - [null]
+2023-11-16 13:07:59.685 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [21] as [BIGINT] - [2]
+2023-11-16 13:08:00.110 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        checkimeir0_.id as id1_12_,
+        checkimeir0_.active as active2_12_,
+        checkimeir0_.created_on as created_on3_12_,
+        checkimeir0_.description as description4_12_,
+        checkimeir0_.feature_name as feature_name5_12_,
+        checkimeir0_.modified_on as modified_on6_12_,
+        checkimeir0_.remark as remark7_12_,
+        checkimeir0_.tag as tag8_12_,
+        checkimeir0_.type as type9_12_,
+        checkimeir0_.value as value10_12_
+    from
+        check_imei_response_param checkimeir0_
+    where
+        checkimeir0_.tag=?
+        and checkimeir0_.type=?
+        and checkimeir0_.feature_name=?
+2023-11-16 13:08:00.111 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [CheckImeiErrorMessage]
+2023-11-16 13:08:00.112 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [INTEGER] - [1]
+2023-11-16 13:08:00.112 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [CheckImei]
+2023-11-16 13:08:00.536 [http-nio-9504-exec-10] ERROR com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleBadRequestException :90 - Error msg :null # request ServletWebRequest: uri=/eirs/services/checkIMEI;client=117.233.210.77
+2023-11-16 13:08:00.536 [http-nio-9504-exec-10] ERROR com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleBadRequestException :94 - Error msgs :java.lang.IllegalStateException: getInputStream() has already been called for this request
+2023-11-16 13:08:00.537 [http-nio-9504-exec-10] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        checkimeir0_.id as id1_12_,
+        checkimeir0_.active as active2_12_,
+        checkimeir0_.created_on as created_on3_12_,
+        checkimeir0_.description as description4_12_,
+        checkimeir0_.feature_name as feature_name5_12_,
+        checkimeir0_.modified_on as modified_on6_12_,
+        checkimeir0_.remark as remark7_12_,
+        checkimeir0_.tag as tag8_12_,
+        checkimeir0_.type as type9_12_,
+        checkimeir0_.value as value10_12_
+    from
+        check_imei_response_param checkimeir0_
+    where
+        checkimeir0_.tag=?
+        and checkimeir0_.type=?
+        and checkimeir0_.feature_name=?
+2023-11-16 13:08:00.538 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [CheckImeiErrorMessage]
+2023-11-16 13:08:00.538 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [INTEGER] - [1]
+2023-11-16 13:08:00.538 [http-nio-9504-exec-10] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [CheckImei]
+2023-11-16 13:08:00.961 [http-nio-9504-exec-10] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException :414 - Failure in @ExceptionHandler com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler#handleBadRequestException(Exception, WebRequest)
+java.lang.NullPointerException: null
+        at com.gl.ceir.config.service.impl.CheckImeiServiceImpl.globalErrorMsgs(CheckImeiServiceImpl.java:223) ~[classes!/:2.2.2.RELEASE]
+        at com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleBadRequestException(GlobalControllerExceptionHandler.java:97) ~[classes!/:2.2.2.RELEASE]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-11-16 13:08:00.962 [http-nio-9504-exec-10] ERROR org.apache.juli.logging.DirectJDKLog.log :175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/eirs] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+        at com.gl.ceir.config.service.impl.CheckImeiServiceImpl.globalErrorMsgs(CheckImeiServiceImpl.java:223) ~[classes!/:2.2.2.RELEASE]
+        at com.gl.ceir.config.service.impl.CheckImeiServiceImpl.getImeiDetailsDevices(CheckImeiServiceImpl.java:197) ~[classes!/:2.2.2.RELEASE]
+        at com.gl.ceir.config.controller.CheckImeiController.checkImeiDevice(CheckImeiController.java:178) ~[classes!/:2.2.2.RELEASE]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.lang.Thread.run(Thread.java:829) [?:?]
+
+
+
+
+
+
+
+
+http://159.223.159.153:9504/eirs/sampleFile/downloadFile/Screenshot.png
+-----------------------------------------------------------------------
+
+=> Postman
+
+{
+    "timestamp": "2023-11-16T07:42:25.161+0000",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "No message available",
+    "path": "/eirs/sampleFile/downloadFile/Screenshot.png"
+}
+
+
+=> Logs
+
+2023-11-16 13:12:24.507 [http-nio-9504-exec-1] INFO  com.gl.ceir.config.service.impl.FileStorageService.loadFileAsResource :62 - File Storage Location /home/maverick
+2023-11-16 13:12:24.509 [http-nio-9504-exec-1] ERROR com.gl.ceir.config.service.impl.FileStorageService.loadFileAsResource :66 - Could not create the directory where the uploaded files will be stored.
+java.nio.file.AccessDeniedException: /home/maverick
+        at sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]
+        at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+        at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]
+        at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389) ~[?:?]
+        at java.nio.file.Files.createDirectory(Files.java:690) ~[?:?]
+        at java.nio.file.Files.createAndCheckIsDirectory(Files.java:797) ~[?:?]
+        at java.nio.file.Files.createDirectories(Files.java:783) ~[?:?]
+        at com.gl.ceir.config.service.impl.FileStorageService.loadFileAsResource(FileStorageService.java:64) [classes!/:2.2.2.RELEASE]
+        at com.gl.ceir.config.controller.FileUploadDownloadController.downloadFile(FileUploadDownloadController.java:88) [classes!/:2.2.2.RELEASE]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-11-16 13:12:24.512 [http-nio-9504-exec-1] INFO  com.gl.ceir.config.service.impl.FileStorageService.loadFileAsResource :70 - File filePath /home/maverick/Screenshot.png
+2023-11-16 13:12:24.514 [http-nio-9504-exec-1] ERROR com.gl.ceir.config.service.impl.FileStorageService.loadFileAsResource :77 - File not found ie Resource Not exists Screenshot.png
+2023-11-16 13:12:24.515 [http-nio-9504-exec-1] ERROR com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleBadRequestException :90 - Error msg :null # request ServletWebRequest: uri=/eirs/sampleFile/downloadFile/Screenshot.png;client=117.233.210.77
+2023-11-16 13:12:24.516 [http-nio-9504-exec-1] ERROR com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleBadRequestException :92 - Error ############ :
+2023-11-16 13:12:24.517 [http-nio-9504-exec-1] DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger.logStatement :127 -
+    select
+        checkimeir0_.id as id1_12_,
+        checkimeir0_.active as active2_12_,
+        checkimeir0_.created_on as created_on3_12_,
+        checkimeir0_.description as description4_12_,
+        checkimeir0_.feature_name as feature_name5_12_,
+        checkimeir0_.modified_on as modified_on6_12_,
+        checkimeir0_.remark as remark7_12_,
+        checkimeir0_.tag as tag8_12_,
+        checkimeir0_.type as type9_12_,
+        checkimeir0_.value as value10_12_
+    from
+        check_imei_response_param checkimeir0_
+    where
+        checkimeir0_.tag=?
+        and checkimeir0_.type=?
+        and checkimeir0_.feature_name=?
+2023-11-16 13:12:24.733 [http-nio-9504-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [1] as [VARCHAR] - [CheckImeiErrorMessage]
+2023-11-16 13:12:24.734 [http-nio-9504-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [2] as [INTEGER] - [1]
+2023-11-16 13:12:24.734 [http-nio-9504-exec-1] TRACE org.hibernate.type.descriptor.sql.BasicBinder.bind :64 - binding parameter [3] as [VARCHAR] - [CheckImei]
+2023-11-16 13:12:25.156 [http-nio-9504-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException :414 - Failure in @ExceptionHandler com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler#handleBadRequestException(Exception, WebRequest)
+java.lang.NullPointerException: null
+        at com.gl.ceir.config.service.impl.CheckImeiServiceImpl.globalErrorMsgs(CheckImeiServiceImpl.java:223) ~[classes!/:2.2.2.RELEASE]
+        at com.gl.ceir.config.exceptions.GlobalControllerExceptionHandler.handleBadRequestException(GlobalControllerExceptionHandler.java:97) ~[classes!/:2.2.2.RELEASE]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-11-16 13:12:25.159 [http-nio-9504-exec-1] ERROR org.apache.juli.logging.DirectJDKLog.log :175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/eirs] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+        at com.gl.ceir.config.controller.FileUploadDownloadController.downloadFile(FileUploadDownloadController.java:93) ~[classes!/:2.2.2.RELEASE]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+        at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.1.RELEASE.jar!/:5.2.1.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar!/:5.2.2.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar!/:9.0.29]
+        at java.lang.Thread.run(Thread.java:829) [?:?]
+
+
+
+
+
+http://159.223.159.153:9504/CEIR/dialectRetreiver?feature_name=CheckImei&language=kh
+---------------------------------------------------------------------------------------------
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>HTTP Status 404 – Not Found</title>
+	<style type="text/css">
+		body {
+			font-family: Tahoma, Arial, sans-serif;
+		}
+
+		h1,
+		h2,
+		h3,
+		b {
+			color: white;
+			background-color: #525D76;
+		}
+
+		h1 {
+			font-size: 22px;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+
+		h3 {
+			font-size: 14px;
+		}
+
+		p {
+			font-size: 12px;
+		}
+
+		a {
+			color: black;
+		}
+
+		.line {
+			height: 1px;
+			background-color: #525D76;
+			border: none;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>HTTP Status 404 – Not Found</h1>
+</body>
+
+</html>
+
+
+
+
+

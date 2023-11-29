@@ -1,0 +1,247 @@
+
+							Report
+							******
+
+
+
+CP1
+========
+
+/u02/eirsdata/raw_cdr/metfone
+
+Before CP1 process
+====================
+
+[ceir@mango-server1 metfone]$ ./t.sh
+all/: 0
+mf_ims/: 0
+mf_msc09/: 104
+mf_msc10/: 111
+mf_msc11/: 106
+mf_msc14/: 8
+mf_msc15/: 229
+mf_msc16/: 105
+mf_sgsn/: 0
+mf_sgsn1/: 105
+mf_sgw/: 9
+../: 885
+./: 674
+
+After CP1 process
+========================
+./start.sh CP1 metfone <folderName>
+
+
+cdr_file_received_detail(table)
+======================================
+folder		file from raw_cdr		file in temp	remark
+----------------------------------------------------------------------------------------
+mf_msc09/	104				103		one left in cdr
+
+mf_msc10/	111				110		one left in cdr
+
+mf_msc11/	106				105		one left in cdr
+
+mf_msc14/	8				7		one left in cdr
+
+mf_msc15/	229				228		one left in cdr
+
+mf_msc16/	105				104		one left in cdr
+
+mf_sgw/		9				8		one left in cdr
+
+mf_sgsn1/	105				104		one left in cdr
+-----------------------------------------------------------------------------------------
+
+Above number of file matched with DB table (cdr_file_received_detail).
+status_sig1 and status_sig2 both become (INIT) in DB table.
+
+
+raw_cdr(after CP1)
+--------------------
+[ceir@mango-server1 metfone]$ ./t.sh
+all/: 0
+mf_ims/: 0
+mf_msc09/: 1
+mf_msc10/: 1
+mf_msc11/: 1
+mf_msc14/: 1
+mf_msc15/: 1
+mf_msc16/: 1
+mf_sgsn/: 0
+mf_sgsn1/: 1
+mf_sgw/: 1
+../: 220
+./: 9
+
+temp(after CP1)
+-----------------
+
+[ceir@mango-server1 metfone]$ ./t.sh
+all/: 0
+mf_ims/: 0
+mf_msc09/: 103
+mf_msc10/: 110
+mf_msc11/: 105
+mf_msc14/: 7
+mf_msc15/: 228
+mf_msc16/: 104
+mf_sgsn/: 0
+mf_sgsn1/: 104
+mf_sgw/: 8
+../: 774
+./: 770
+
+
+CP2
+=========
+
+Before CP2
+==================
+
+/u02/eirsdata/temp/metfone
+----------------------------
+
+[ceir@mango-server1 metfone]$ ./t.sh
+all/: 0
+mf_ims/: 0
+mf_msc09/: 103
+mf_msc10/: 110
+mf_msc11/: 105
+mf_msc14/: 7
+mf_msc15/: 228
+mf_msc16/: 104
+mf_sgsn/: 0
+mf_sgsn1/: 104
+mf_sgw/: 8
+../: 774
+./: 770
+
+
+/u02/eirsdata/input/metfone
+-----------------------------
+[ceir@mango-server1 metfone]$ ./t.sh
+all/: 0
+mf_ims/: 0
+mf_msc09/: 0
+mf_msc10/: 0
+mf_msc11/: 0
+mf_msc14/: 0
+mf_msc15/: 0
+mf_msc16/: 0
+mf_sgsn/: 0
+mf_sgsn1/: 0
+mf_sgw/: 0
+../: 4
+./: 1
+
+
+After CP2 
+=========================
+
+./start.sh CP2 metfone <folderName>
+
+
+/u02/eirsdata/temp/metfone
+----------------------------
+
+[ceir@mango-server1 metfone]$ ./t.sh	
+all/: 0
+mf_ims/: 0
+mf_msc09/: 103						
+mf_msc10/: 110
+mf_msc11/: 105
+mf_msc14/: 7
+mf_msc15/: 228
+mf_msc16/: 104
+mf_sgsn/: 0
+mf_sgsn1/: 104
+mf_sgw/: 8
+../: 774
+./: 770
+
+
+/u02/eirsdata/input/metfone
+-----------------------------
+
+[ceir@mango-server1 metfone]$ ./t.sh
+all/: 0
+mf_ims/: 0
+mf_msc09/: 103
+mf_msc10/: 110
+mf_msc11/: 105
+mf_msc14/: 7
+mf_msc15/: 228
+mf_msc16/: 104
+mf_sgsn/: 0
+mf_sgsn1/: 104
+mf_sgw/: 8
+../: 773
+./: 770
+
+
+Both (input and temp) contains same number of files.
+status_sig1 = DONE for all the files.
+
+We have to make status_sig2 = DONE by default.
+ UPDATE app.cdr_file_received_detail SET status_sig2 ='DONE';
+after this command status_sig2 will become DONE for each and every entry.
+
+
+
+CP3
+===========
+
+Before CP3(temp)
+=================
+
+[ceir@mango-server1 metfone]$ ./t.sh
+all/: 0
+mf_ims/: 0
+mf_msc09/: 103
+mf_msc10/: 110
+mf_msc11/: 105
+mf_msc14/: 7
+mf_msc15/: 228					Total of temp = 769 files.
+mf_msc16/: 104
+mf_sgsn/: 0
+mf_sgsn1/: 104
+mf_sgw/: 8
+../: 774
+./: 770
+
+
+
+./start.sh CP3 metfone <folderName>
+--------------------------------------
+After CP3(temp)
+================
+
+all/: 0
+mf_ims/: 0
+mf_msc09/: 0
+mf_msc10/: 0
+mf_msc11/: 0
+mf_msc14/: 0
+mf_msc15/: 0
+mf_msc16/: 0
+mf_sgsn/: 0
+mf_sgsn1/: 0
+mf_sgw/: 0
+../: 5
+./: 1
+
+
+After performing CP3 file from temp are deleted and also entries from DB Table(app.cdr_file_received_detail)
+are removed and entries are updated in DB table(aud.cdr_file_delete_aud).
+
+Total number of entries in table(aud.cdr_file_delete_aud)(769) = total number of file in temp before CP3(769).
+
+
+Remark:
+=====================
+The flow of files for CP1, CP2 and CP3 are fine, theire is no problem in flow of files.
+Also the insertion and deletion of entries in DB tables are fine.
+
+
+

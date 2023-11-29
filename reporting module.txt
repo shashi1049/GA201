@@ -1,0 +1,5 @@
+active_unique_imei
+cdr_file_processed_detail
+cdr_file_pre_processing_detail
+active_unique_foreign_imei
+active_foreign_imei_with_different_msisdn

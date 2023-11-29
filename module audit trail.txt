@@ -1,0 +1,183 @@
+module audit trail
+============================
+Desc
+---------
+
+Auto increment number
+Record creation date (Index column)
+Record creation date
+Time taken to complete the processing
+Numeric code which defines different meanings
+Status message (success or fail)
+Error message if any error happens
+Name of Module (index column) 
+Feature name
+Action taken by module
+Number of new records inserted in DB during data processing
+Generic field used to store the file name if required
+Server name on which module running
+Number of records updated in DB during data processing
+Number of records failed during data processing
+
+
+exam
+-----
+
+NA
+Current time
+Current time
+e.g. 1500 (time in ms)
+200, 201, 501
+SUCCESS, FAIL
+Unable to establish DB connection, incorrect username, etc.
+GSMA TAC – Download Manager or GSMA TAC – Data Processor
+GSMA Database Manager OR GSMA Data Processor
+Database Download or Data Processed
+Total number of new records inserted during the data processing
+GSMA TAC Database file name with date
+EPO1, EPO2
+Total number of records updated during the data processing
+Total number of records failed during data processing
+
+
+gsma_tac_detail
+===================
+
+desc
+-----
+Auto increment number
+TAC insertion date in EIRS system
+TAC modification date in EIRS system
+GSMA allocated TAC Number. 
+Device Manufacturer Name
+Model of Device
+Name of device being used for marketing in country
+Name of Brand
+TAC allocation date
+Company ID of Manufacturer
+Smartphone or Feature Phone
+Bluetooth supported or not and which version is supporting
+NFC
+A WLAN is a small and restricted wireless local area network.
+Removable UICC value from GSMA data
+Removable EUICC value from GSMA data
+Non Removable UICC value from GSMA data
+Non Removable EUICC value from GSMA data
+Number of sim slot
+Number of IMEI
+Android or iOS etc
+OEM software is usually licensed on a per-system basis
+Action in DB (insert/Update)
+CDMA support, GSMA Support,2G,3G,4G, and 5G
+GSMA Data Status
+
+
+exam
+--------
+
+NA
+Current time
+Current time
+00235611'
+NA
+CPH2341
+e.g. Oneplus 11
+e.g. oppo, Nokia
+NA
+NA
+NA
+NA
+NA
+NA
+Yes/No(1)
+Yes/No(1)
+Yes/No(1)
+Yes/No(1)
+NA
+NA
+NA
+NA
+NA
+NA
+New or updated
+
+
+sys_param 
+==========
+desc
+------
+Unique id
+Date when record created
+Description of configuration record
+Date when record modified
+Tag of configuration for which value is assigned
+Type
+Value of configuration tag
+If the tag is enabled or disabled
+Feature for which tag is defined
+Remark regarding the configuration tag
+Type of user who updated the tag
+Details of who modified the tag
+
+sys_param_list_value
+======================
+
+desc
+-----
+ID (Primary Key)
+Time on which this entry in the table was created
+Description of the configuration record
+
+
+
+Default value of the current timestamp
+Tag of configuration for which a value is assigned
+
+Value of the configuration tag
+Table modified by whom
+
+msg_cfg 
+========
+desc
+-----
+
+ID (Primary Key)
+Whether User IMEI is active 
+To check the notification channel(Email/SMS)
+Time on which this entry in table created
+Description of   configuration  record
+Default value of current timestamp
+ 
+Tag of configuration for which value is assigned
+Value of configuration  tag
+Feature for which tag is defined
+Remark regarding the configuration tag
+ 
+Type of the user
+Table modified by whom
+
+cfg_feature_alert 
+==================
+desc
+-----
+ ID (Primary Key)
+ Time on which this entry in table created
+ Time on which this entry in table updated
+ What is the alert against the notification for the user
+ Description of the alert
+ 
+
+sys_generated_alert 
+===================
+desc
+-------
+ ID (Primary Key)
+ Time on which this entry in table created
+ Time on which this entry in table updated
+ What is the alert against the notification for the user
+ Description of the alert
+ Status of the notification
+ User Id of the User
+ Username of the User
+
+

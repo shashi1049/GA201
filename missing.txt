@@ -1,0 +1,23 @@
+NWL
+REPORTING MODULE
+SMS Notification
+API Service1
+
+API Service2
+API Service3
+API Service4
+API Service5
+
+
+
+
+
+
+
+
+
+
+end_user_info
+end_user_info_aud
+user_type_feature
+mdr_attached_file_info
